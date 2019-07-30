@@ -7,7 +7,7 @@ from telegram.ext import Updater, CommandHandler, Filters, MessageHandler
 from model import get_face_neighbours
 
 with open('token') as f:
-    TOKEN = f.read()
+    TOKEN = f.read().strip()
 
 WELCOME_MESSAGE = 'Welcome to K-pop alike bot! Send a selfie to begin.'
 
